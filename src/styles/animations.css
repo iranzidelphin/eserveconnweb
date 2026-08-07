@@ -1,0 +1,14 @@
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.72;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.soft-pulse {
+  animation: soft-pulse 3s ease-in-out infinite;
+}
