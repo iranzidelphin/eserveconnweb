@@ -5,6 +5,7 @@ export default function NotFound() {
   setPageMeta({
     title: 'Page Not Found | Eserveconn Ltd',
     description: 'The requested Eserveconn Ltd page could not be found.',
+    noIndex: true,
   })
 
   return (

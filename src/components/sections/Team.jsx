@@ -3,11 +3,11 @@ import SectionTitle from '../common/SectionTitle'
 import Reveal from '../common/Reveal'
 import { team } from '../../content/team'
 
-export default function Team() {
+export default function Team({ headingLevel }) {
   return (
     <section className="bg-slate-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto max-w-7xl">
-        <SectionTitle eyebrow="Our Team" title="Meet the team" description="A focused team of builders shaping Rwanda's digital future." />
+        <SectionTitle eyebrow="Our Team" title="Meet the team" description="A focused team of builders shaping Rwanda's digital future." headingLevel={headingLevel} />
         <div className="grid gap-6 md:grid-cols-3">
           {team.map((member) => (
             <Reveal key={member.name}>

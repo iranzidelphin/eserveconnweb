@@ -4,7 +4,7 @@ import SectionTitle from '../common/SectionTitle'
 import Reveal from '../common/Reveal'
 import { company } from '../../content/company'
 
-export default function About() {
+export default function About({ headingLevel }) {
   const items = [
     ['Company Story', company.story],
     ['Our Mission', company.mission],
@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section className="px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto max-w-7xl">
-        <SectionTitle eyebrow="About Us" title={`About ${company.name}`} description="A Rwandan software company building accessible, reliable technology from Gisenyi for organizations ready to grow." />
+        <SectionTitle eyebrow="About Us" title={`About ${company.name}`} description="A Rwandan software company building accessible, reliable technology from Gisenyi for organizations ready to grow." headingLevel={headingLevel} />
         <div className="grid gap-5 lg:grid-cols-3">
           {items.map(([title, description]) => (
             <Reveal key={title}>

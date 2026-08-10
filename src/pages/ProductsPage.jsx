@@ -4,13 +4,14 @@ import { setPageMeta } from '../utils/seo'
 
 export default function ProductsPage() {
   setPageMeta({
-    title: 'Products | SafariScon Platform by Eserveconn Ltd',
-    description: 'Discover SafariScon Platform, a smart digital product developed by Eserveconn Ltd.',
+    title: 'Products | SafariScon by Eserveconn Ltd',
+    description: 'Discover SafariScon, a web and mobile marketplace developed by Eserveconn Ltd.',
+    path: '/products',
   })
 
   return (
     <>
-      <Products />
+      <Products headingLevel="h1" />
       <Stats />
     </>
   )

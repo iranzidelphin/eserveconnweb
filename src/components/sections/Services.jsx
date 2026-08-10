@@ -7,11 +7,11 @@ import { slugify } from '../../utils/helpers'
 
 const icons = { Cloud, Code2, DatabaseZap, Globe2, Headphones, Layers3, MousePointer2, Smartphone }
 
-export default function Services() {
+export default function Services({ headingLevel }) {
   return (
     <section className="bg-slate-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto max-w-7xl">
-        <SectionTitle eyebrow="What We Do" title="Services built for real impact" description="From first concept to long-term support, we cover the full software lifecycle." />
+        <SectionTitle eyebrow="What We Do" title="Services built for real impact" description="From first concept to long-term support, we cover the full software lifecycle." headingLevel={headingLevel} />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => {
             const Icon = icons[service.icon]

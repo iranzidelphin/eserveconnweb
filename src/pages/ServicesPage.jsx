@@ -4,13 +4,14 @@ import { setPageMeta } from '../utils/seo'
 
 export default function ServicesPage() {
   setPageMeta({
-    title: 'Services | Eserveconn Ltd',
-    description: 'Explore Eserveconn Ltd software development, mobile app, web, cloud, API, UI/UX, and support services.',
+    title: 'Eserveconn Services | Software, Web & Digital Solutions',
+    description: 'Explore Eserveconn software development, web development, mobile apps, enterprise systems, cloud solutions, UI/UX design, and technical support in Rwanda.',
+    path: '/services',
   })
 
   return (
     <>
-      <Services />
+      <Services headingLevel="h1" />
       <WhyChooseUs />
     </>
   )

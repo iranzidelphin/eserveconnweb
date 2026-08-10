@@ -1,5 +1,5 @@
 import denkoImage from '../assets/images/denko image.png'
-import dufitimanaImage from '../assets/images/dufitimana.png'
+import dufitimanaImage from '../assets/images/theoduf.jpeg'
 import remainingTeamImage from '../assets/images/image.png'
 
 export const team = [
@@ -16,6 +16,7 @@ export const team = [
     name: 'Dufitimana Theoneste',
     role: 'Software Engineer & Cybersecurity Expert',
     image: dufitimanaImage,
+    imageClassName: 'scale-[1.35] object-[50%_30%]',
     description: 'Specializing in full-stack development, web security, and modern application architecture.',
   },
   {

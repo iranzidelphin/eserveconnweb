@@ -3,7 +3,7 @@ import Button from '../common/Button'
 import SectionTitle from '../common/SectionTitle'
 import { company } from '../../content/company'
 
-export default function Contact() {
+export default function Contact({ headingLevel }) {
   const whatsappNumber = '250788836180'
   const whatsappLink = `https://wa.me/${whatsappNumber}`
   const emailLink = `mailto:${company.email}`
@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section className="px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto max-w-7xl">
-        <SectionTitle eyebrow="Contact Us" title="Let's build something together" description="Tell us about your project and our team will get back to you with clear next steps." />
+        <SectionTitle eyebrow="Contact Us" title="Let's build something together" description="Tell us about your project and our team will get back to you with clear next steps." headingLevel={headingLevel} />
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/60">
             <h3 className="font-display text-2xl font-bold text-slate-950">Ready to talk?</h3>

@@ -6,12 +6,14 @@ import Services from '../components/sections/Services'
 import Stats from '../components/sections/Stats'
 import Team from '../components/sections/Team'
 import WhyChooseUs from '../components/sections/WhyChooseUs'
-import { setPageMeta } from '../utils/seo'
+import { getOrganizationSchema, getWebsiteSchema, setPageMeta } from '../utils/seo'
 
 export default function Home() {
   setPageMeta({
-    title: 'Eserveconn Ltd | Smart Digital Solutions in Rwanda',
-    description: 'Eserveconn Ltd builds software products and digital platforms from Gisenyi, Rubavu District, Rwanda.',
+    title: 'Eserveconn | Digital Solutions & Software Development in Rwanda',
+    description: 'Eserveconn is a Rwanda-based technology company delivering modern software development, web applications, mobile apps, and digital solutions for businesses and organizations.',
+    path: '/',
+    structuredData: [getWebsiteSchema(), getOrganizationSchema()],
   })
 
   return (

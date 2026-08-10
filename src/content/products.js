@@ -1,7 +1,12 @@
 export const products = [
   {
-    name: 'SafariScon Platform',
+    name: 'SafariScon',
     label: 'Flagship Product',
+    category: 'Travel & hospitality marketplace',
+    brand: 'Eserveconn',
+    pricing: 'Custom pricing',
+    availability: 'Pending release',
+    platforms: 'Web platform & mobile app',
     description:
       'SafariScon is a Rwanda service marketplace for discovering and booking trusted travel, hospitality, transport, food, venue, tour, and destination services from verified providers.',
     features: [
