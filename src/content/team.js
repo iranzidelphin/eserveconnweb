@@ -9,7 +9,7 @@ export const team = [
     role: 'Managing Director',
     image: remainingTeamImage,
     imageClassName: '-rotate-3 scale-110 object-[52%_44%]',
-    description: 'Tourism expert and university lecturer driving innovation and strategic growth.',
+    description: 'Tourism Expert and university lecturer driving innovation and strategic growth.',
   },
   {
     initials: 'TD',
